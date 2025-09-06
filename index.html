@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" class="h-100" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fleetfy - Movendo o futuro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+    </style>
+  </head>
+  <body class="d-flex h-100 text-center text-bg-dark custom-bg">
+  <div class="background-holder"></div>
+  <div class="background-blur-overlay"></div>
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column position-relative">
+      <header class="mb-auto"></header>
+      <main>
+        <div class="d-flex flex-column align-items-center justify-content-between mb-4">
+          <div class="logo-bar bg-white rounded p-2 px-3 shadow-sm">
+            <img src="assets/logo.svg" alt="Fleetfy" height="60" style="vertical-align:middle;" />
+          </div>
+        </div>
+        <h1 class="display-4 fw-bold mb-3">movendo o futuro</h1>
+        <p class="lead mb-4">Transformando veículos parados em receita ativa</p>
+        <p class="lead text-white-50">Estamos chegando, aguarde...</p>
+      </main>
+      <footer class="mt-auto text-white-50">
+        <a class="link-secondary" href="mailto:contato@fleetfy.com.br">contato@fleetfy.com.br</a>
+        <p id="footer-text"></p>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+      const year = new Date().getFullYear();
+      document.getElementById('footer-text').innerHTML = `Fleetfy ${year} &copy; Todos os direitos reservados.`;
+    </script>
+  </body>
+</html>
